@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<base target="_top">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>巴士抵站時間</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	</head>
+	
+	<body>		
+		<h1 style="margin: 10px; text-align:center;">抵站時間</h1>
+		<h3 id="routeNumber"></h1>
+		<h3 id="stopName"></h1>
+		
+		<div class="centerDiv">		
+			<button class='btnMtrLine' id='nearby' onclick='changeTable("nearby")'>鄰近車站</button>
+			<button class='btnMtrLine' id='城巴' onclick='changeTable("城巴")'>城巴</button>
+			<button class='btnMtrLine' id='九巴' onclick='changeTable("九巴")'>九巴</button>
+			<br>
+			<button class='btnMtrLine' id='嶼巴' onclick='changeTable("嶼巴")'>嶼巴</button>
+			<button class='btnMtrLine' id='港鐵巴士' onclick='changeTable("港鐵巴士")'>港鐵巴士</button>
+		</div>
+		
+		<div class="centerDiv">
+			<input type="text" id="routeSearch" class="routeSearch" onkeyup="searchRoute('ctb')" placeholder="Search...">
+		</div>
+		
+		<div id="nearbyList">
+			<table id="nearbyTable" class="timetable">
+				<tbody>
+					<tr>
+						<td><strong>路線</strong></td>
+						<td><strong>方向</strong></td>
+						<td><strong>時間</strong></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div id="routeList" style="display: none;">
+		  <table id="routeTable" class="timetable">
+			<tbody>
+				<tr>
+					<td style="width:22%"><strong>路線</strong></td>
+					<td style="width:78%"><strong>方向</strong></td>
+				</tr>
+			</tbody>
+		  </table>
+		</div>
+
+		<div id="stationList" style="display: none;">
+		  <table id="stationTable" class="timetable">
+			<tbody>
+				<tr>
+					<td></td>
+					<td><strong>巴士站</strong></td>
+				</tr>
+			</tbody>
+		  </table>
+		</div>
+		
+		<div id="etaList" style="display: none;">
+		  <table id="etaTable" class="timetable">
+			
+		  </table>
+		</div>
+		
+		<div class="centerDiv">
+		  <span id="waiting" class="loadingsrn" style="color: lime;">請稍等</span>
+		</div>
+
+		<div class="centerDiv" id="loadingdiv">
+		  <span id="loading" class="loadingsrn" style="display: none;">搜尋中...</span>
+		</div>
+		
+		<script src="script.js"></script>
+	</body>
+</html>

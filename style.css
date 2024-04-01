@@ -1,0 +1,217 @@
+label{
+	font-family:  Arial, sans-serif;
+}
+
+.centerDiv{/**/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.btnOne {/*small buttons*/
+	background-color: #28CAB2; 
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.btnMtrLine {/**/
+	background-color: #0B0; 
+	border: none;
+	border-radius: 5px;
+	color: white;
+	padding: 6px 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 2px 1px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.btnThree {/*MTR*/
+	background-color: #28CAB2; 
+	border: none;
+	color: white;
+	padding: 18px 12px;
+	width: 50%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 200%;
+	margin: 2px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.timetable {
+	font-family: Arial, Helvetica, sans-serif;
+	border: 1px solid white;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.timetable td {
+	border: 1px solid white;
+	padding: 4px 4px;
+	text-align: left;
+	color: white;
+	font-size: 20px;
+	white-space: normal;
+} 
+
+.timetable input{
+	font-size: 20px;
+}
+
+.timetable button{
+	font-size: 20px;
+}
+
+.timetable tr{
+	background-color: #04AA6D;
+}
+
+.timetable tr input{
+	background-color: #04AA6D;
+	border-color: #04AA6D;
+}
+
+.timetable tr button{
+	background-color: #04AA6D;
+	border-color: #04AA6D;
+}
+
+.timetable tr:nth-child(even){
+	background-color: #3fc300;
+}
+
+.timetable tr:nth-child(even) input{
+	background-color: #3fc300;
+	border-color: #3fc300;
+}
+
+.timetable tr:nth-child(even) button{
+	background-color: #3fc300;
+	border-color: #3fc300;
+}
+
+.timetable tr:nth-child(1){
+	background-color: #017300;
+}
+
+.timetable tr:nth-child(1) td{
+	padding: 8px 8px;
+}
+
+.homepageTable {
+	font-family: Arial, Helvetica, sans-serif;
+	border: 1px solid white;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.homepageTable td {
+	border: 1px solid white;
+	padding: 8px 8px;
+	text-align: left;
+	background-color: #04AA6D;
+	color: white;
+	font-size: 24px;
+	white-space: normal;
+} 
+
+.homepageTable input{
+	font-size: 24px;
+	background-color: #04AA6D;
+}
+
+.homepageTable button{
+	font-size: 24px;
+	background-color: #04AA6D;
+}
+
+.mtrTable td {/**/
+	border: 1px solid white;
+	padding: 4px 4px;
+	text-align: left;
+	color: white;
+	font-size: 20px;
+	white-space: normal;
+} 
+
+/*Used in homepage buttons*/
+.btnPage {
+	background-color: #28CAB2; 
+	border: none;
+	color: white;
+	padding: 18px 12px;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 200%;
+	margin: 2px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.loadingsrn {/**/
+	color: #D8D835;
+	font-weight: bold;
+	font-size: 72px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*This is to remove the spin button for number input*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.btnOrigin{/**/
+	background-color: #28CAB2; 
+	border: none;
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	text-align: left;
+	width: 100%;
+	display: inline-block;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	white-space: normal;
+}
+
+.btnEta{/**/
+	background-color: #28CAB2;
+	border: none;
+	color: white;
+	text-decoration: none;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.routeSearch{/***/
+	background-image: url('searchicon.png');
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	width: 50%;
+	font-size: 16px;
+	padding: 12px 20px 12px 40px;
+	border: 1px solid #ddd;
+	margin-bottom: 12px;
+}
